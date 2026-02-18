@@ -328,7 +328,7 @@
 const { useState, useEffect, useRef } = React;
 
 const CONFIG = {
-  UPI_ID: "yourname@okaxis",
+  UPI_ID: "120036909122@cnrb",
   MERCHANT_NAME: "CHEKKUPOINT",
   EMAILJS_SERVICE_ID: "service_XXXXXX",
   EMAILJS_TEMPLATE_ID: "template_XXXXX",
@@ -336,10 +336,10 @@ const CONFIG = {
 };
 
 const PRODUCTS = [
-  {id:1,name:"Cold-Pressed Coconut Oil",desc:"Pure virgin coconut oil extracted using traditional wooden chekku. Rich in lauric acid, ideal for cooking & hair care.",price:349,unit:"500 ml",emoji:"🥥",bg:"linear-gradient(135deg,#e0f2ee,#b8e6da)",badge:"Best Seller"},
-  {id:2,name:"Wood-Pressed Groundnut Oil",desc:"Naturally extracted peanut oil retaining full flavour and nutrients. Perfect for South Indian cooking.",price:299,unit:"1 Litre",emoji:"🥜",bg:"linear-gradient(135deg,#fdf3e3,#f5dba8)",badge:"Traditional"},
-  {id:3,name:"Cold-Pressed Sesame Oil",desc:"Stone-ground gingelly oil with authentic aroma. Rich in antioxidants, great for cooking and Ayurvedic massage.",price:449,unit:"500 ml",emoji:"🌿",bg:"linear-gradient(135deg,#f0ede8,#dfc9b2)",badge:"Ayurvedic"},
-  {id:4,name:"Wood-Pressed Castor Oil",desc:"Pure castor oil cold-pressed traditionally. Widely used for hair growth, skin nourishment and joint care.",price:279,unit:"250 ml",emoji:"🫙",bg:"linear-gradient(135deg,#eef4e8,#c8dcc0)",badge:"Pure"},
+  {id:1,name:"Cold-Pressed Coconut Oil",desc:"Pure virgin coconut oil extracted using traditional wooden chekku. Rich in lauric acid, ideal for cooking & hair care.",price:450,unit:"1 Litre",emoji:"🥥",bg:"linear-gradient(135deg,#e0f2ee,#b8e6da)",badge:"Best Seller"},
+  {id:2,name:"Wood-Pressed Groundnut Oil",desc:"Naturally extracted peanut oil retaining full flavour and nutrients. Perfect for South Indian cooking.",price:250,unit:"1 Litre",emoji:"🥜",bg:"linear-gradient(135deg,#fdf3e3,#f5dba8)",badge:"Traditional"},
+  {id:3,name:"Cold-Pressed Sesame Oil",desc:"Stone-ground gingelly oil with authentic aroma. Rich in antioxidants, great for cooking and Ayurvedic massage.",price:450,unit:"1 Litre",emoji:"🌿",bg:"linear-gradient(135deg,#f0ede8,#dfc9b2)",badge:"Ayurvedic"},
+  {id:4,name:"Wood-Pressed Castor Oil",desc:"Pure castor oil cold-pressed traditionally. Widely used for hair growth, skin nourishment and joint care.",price:420,unit:"1 Litre",emoji:"🫙",bg:"linear-gradient(135deg,#eef4e8,#c8dcc0)",badge:"Pure"},
   {id:5,name:"Cold-Pressed Mustard Oil",desc:"Pungent kachi ghani mustard oil — staple for pickling, tempering, and traditional massage.",price:329,unit:"1 Litre",emoji:"🌼",bg:"linear-gradient(135deg,#fffbe4,#fce480)",badge:"Kachi Ghani"},
 ];
 
@@ -616,7 +616,7 @@ function App(){
               {icon:'🪵',title:'Traditional Chekku Press',desc:'Oils extracted using age-old wooden press methods — no heat, no chemicals, only nature.',num:'01'},
               {icon:'❄️',title:'Cold-Pressed Process',desc:'Low temperature extraction preserves vitamins, minerals and authentic flavour.',num:'02'},
               {icon:'🚚',title:'Fast Delivery',desc:'Fresh oils packed and delivered to your doorstep across India within 3–5 days.',num:'03'},
-              {icon:'🏆',title:'FSSAI Certified',desc:'100% pure with no preservatives, additives or artificial ingredients.',num:'04'},
+              {icon:'🏆',title:'FSSAI Certified',desc: 'License Number : 12425027000987, 100% pure with no preservatives, additives or artificial ingredients.',num:'04'},
             ].map((f,i)=>(
               <div key={i} className={`feature-item reveal reveal-delay-${i+1}`}>
                 <div className="feature-num">{f.num}</div>
@@ -632,7 +632,7 @@ function App(){
       {/* FOOTER */}
       <footer className="footer">
         <p><strong>CHEKKUPOINT</strong> — Manufacturer of Wood Pressed Oils</p>
-        <p style={{marginTop:'8px'}}>© {new Date().getFullYear()} CHEKKUPOINT. All rights reserved. | UPI: <strong>{CONFIG.UPI_ID}</strong></p>
+        <p style={{marginTop:'8px'}}>© {new Date().getFullYear()} CHEKKUPOINT. All rights reserved by Rithwic Industries. | UPI: <strong>{CONFIG.UPI_ID}</strong></p>
       </footer>
 
       {toast && <Toast msg={toast} onDone={()=>setToast(null)}/>}
